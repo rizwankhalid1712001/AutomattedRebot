@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <script type ="text/javascript" src="https://unpkg.com/webcam-easy@1.0.5/dist/webcam-easy.min.js"></script>
+    <link rel="stylesheet" href="camera-button.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <img src="images/Capture1.PNG" alt="issue">
+            <p>Army</p>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+    </nav>
+    
+    <div class="main">
+        <video id="webCam" autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+        <a download onclick="takeAPicture()">Capture</a>
+    </div>
+
+
+    <div class="button">
+        <button class="btns red">
+            <a href="Error.html">Click</a>
+        </button>
+        <button class="btns green">
+            <a href="profile.html">Click</a>
+        </button>
+    </div>
+
+    <script>
+        const webcamElement = document.getElementById("webCam");
+        const canvasElement = document.getElementById("canvas");
+        const webcam = new Webcam(webcamElement, "user", canvasElement);
+        webcam.start();
+
+        function takeAPicture() {
+            let pic = webcam.snap();
+            document.querySelector("a").href = pic;
+        }
+    </script>
+</body>
+</html>

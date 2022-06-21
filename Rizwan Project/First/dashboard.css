@@ -1,0 +1,138 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;    
+  }
+  
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/back.png);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  nav{
+    background-color: #041A39;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+  }
+  
+  #logo{
+    display: flex;
+  }
+  
+  #logo p{
+    color: #fff;
+  }
+  
+  nav p{
+    padding: 0%;
+    margin: 0%;
+    margin: 20px;
+    font-weight: 600;
+    font-size: 26px;
+    color: #fff;
+  }
+  
+  nav img{
+    width: 85px;
+    margin-left: 70px;
+    border-radius: 20;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    padding: 30px;
+    font-size: 20px;
+    list-style: none;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    transition: color 1s;
+  }
+
+
+
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+
+}
+
+.middle{
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 70px;
+}
+
+.top{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+.board{
+    background-color: #fff;
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    transition: background 0.5s;
+}
+
+.board:hover{
+  background-color: rgba(128, 128, 128, 0.509);
+}
+
+.board img{
+    width: 150px;
+    height: 120px;
+    padding: 10px 0;
+}
+
+.bottom{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image{
+    width: 150px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    
+}
